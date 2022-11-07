@@ -1,0 +1,53 @@
+.homePageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(255,0,0,1) 100%);
+    color: white;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.name {
+    font-size: 75px;
+}
+
+.button {
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    border:none;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+    cursor:pointer;
+}
+
+.buttonContainer {
+    display:flex;
+    width: 50%;
+    align-self: center;
+    justify-content: space-between;
+    margin-top:75px;
+
+}
+
+.biographyContainer {
+    max-width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
