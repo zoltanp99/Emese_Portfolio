@@ -1,0 +1,113 @@
+.portfolioWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeButton {
+  position: relative;
+  top: 25px;
+  right: 47%;
+
+  background-color: rgb(207,12,18);
+  color: white;
+  border: none;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 20px 40px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.homeButton:hover {
+  background-color: rgb(134,8,8)
+}
+
+.homeButton:active {
+  background-color:rgb(84,4,5)
+}
+
+.imagesContainer {
+    border-radius: 5px;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(3, 400px);
+    width: fit-content;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.overflowContainer {
+  display: flex;
+  padding: 50px;
+  margin: 50px;
+  width: 100%;
+  justify-content: center;
+  overflow: auto;
+}
+
+/* .singleImageContainer {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.singleImageContainer:hover {
+    transform: scale(1.05);
+} */
+
+.navBar {
+    width: 300px;
+    background-color: red;
+    height: 100vh;
+}
+
+/* test */
+  
+  .imagesContainer:hover .imagesContainer__singleImg:not(:hover) {
+    filter: grayscale(100%);
+    opacity: 0.75;
+  }
+  
+  .imagesContainer:hover .imagesContainer__singleImg:not(:hover)::after {
+    background-color: rgba(#000, 0.5);
+  }
+  
+  /* @media (min-width: 30rem) {
+    .imagesContainer {
+      grid-template-columns: repeat(3, 150px);
+    }
+  } */
+  
+  .imagesContainer__singleImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+    max-width: 100%;
+    background-color: black;
+  }
+  
+  .imagesContainer__singleImg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%; */
+    background-color: rgba(#000, 0);
+    transition: .3s;
+  }
+  
+  .imagesContainer__singleImg img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
