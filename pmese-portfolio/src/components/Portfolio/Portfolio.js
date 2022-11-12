@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './Portfolio.module.css';
+import { ImageModal } from "../ImageModal/ImageModal";
 
 export const Portfolio = (props) => {
     function importAll(r) {
@@ -8,7 +9,22 @@ export const Portfolio = (props) => {
         return images
     }
 
+    const openImageModal = (source) => {
+        debugger;
+        console.log(source);
+        setModalImageSource(bigBoyImages[source]);
+        setIsOpen(true);
+    }
+
+    const closeImageModal = () => {
+        setIsOpen(false);
+    }
+
+    const [isOpen, setIsOpen] = useState(false)
+    const [modalImageSource, setModalImageSource] = useState('')
+
     const thumbnailImageSources = importAll(require.context('../../compressedImages', false, /\.(png|jpe?g|svg)$/));
+    const bigBoyImages = importAll(require.context('../../images', false, /\.(png|jpe?g|svg)$/))
 
     let imageNames = []
     for (const prop in thumbnailImageSources) {
@@ -18,8 +34,8 @@ export const Portfolio = (props) => {
     let actualImages = [] 
     imageNames.forEach((x, index) => {
         actualImages.push(
-            <div className={styles.imagesContainer__singleImg}>
-                <img src={thumbnailImageSources[x]} alt='' height={400} width={400} key={index}/>
+            <div className={styles.imagesContainer__singleImg} onClick={() => openImageModal(x)} key={index}>
+                <img src={thumbnailImageSources[x]} alt='' height={400} width={400}/>
             </div>
         )
     })
@@ -34,6 +50,7 @@ export const Portfolio = (props) => {
                     {actualImages}
                 </div>
             </div>
+            <ImageModal isOpen={isOpen} closeModal={closeImageModal} imageSource={modalImageSource}/>
         </div>
     )
 }
