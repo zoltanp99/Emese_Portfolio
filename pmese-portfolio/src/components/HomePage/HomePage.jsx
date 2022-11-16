@@ -51,7 +51,7 @@ export const HomePage = (props) => {
             </div>
             <div className={styles.paragraphContainer}>
                 <p>
-                    Currently I am open to new possibilities in my career which would help me refine my skills in both art and design.
+                    Right now I am open to new possibilities in my career which would help me refine my skills in both art and design.
                 </p>
             </div>
         <div className={styles.footer}>
