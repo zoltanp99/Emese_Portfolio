@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Emese_Portfolio/static/css/main.a5f48d34.css",
+    "main.css": "/Emese_Portfolio/static/css/main.98daf14a.css",
     "main.js": "/Emese_Portfolio/static/js/main.431b0e27.js",
     "static/js/787.8ba518fc.chunk.js": "/Emese_Portfolio/static/js/787.8ba518fc.chunk.js",
     "static/media/wood 7.jpg": "/Emese_Portfolio/static/media/wood 7.77246dc0cb5f517f22a1.jpg",
@@ -28,12 +28,12 @@
     "static/media/zlarge3.png": "/Emese_Portfolio/static/media/zlarge3.822a009a436e85702074.png",
     "static/media/alogo1.png": "/Emese_Portfolio/static/media/alogo1.89656580fc78c902e1f2.png",
     "index.html": "/Emese_Portfolio/index.html",
-    "main.a5f48d34.css.map": "/Emese_Portfolio/static/css/main.a5f48d34.css.map",
+    "main.98daf14a.css.map": "/Emese_Portfolio/static/css/main.98daf14a.css.map",
     "main.431b0e27.js.map": "/Emese_Portfolio/static/js/main.431b0e27.js.map",
     "787.8ba518fc.chunk.js.map": "/Emese_Portfolio/static/js/787.8ba518fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5f48d34.css",
+    "static/css/main.98daf14a.css",
     "static/js/main.431b0e27.js"
   ]
 }
