@@ -22,6 +22,7 @@ export const HomePage = (props) => {
 
     const handleNavigate = () =>{
         navigate('/Portfolio')
+        window.scrollTo(0, 0)
     }
 
     return (
